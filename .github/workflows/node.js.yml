@@ -25,8 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-      working-directory: devops-assignment 
+      working-directory: devops_assignment 
     - run: npm run build --if-present
-      working-directory: devops-assignment
+      working-directory: devops_assignment
     - run: npm test
-      working-directory: devops-assignment
+      working-directory: devops_assignment
