@@ -26,6 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
       working-directory: devops_assignment 
+      env: 
+       codecov_token: "fff74f75-ad3d-4e0d-899f-fa1109b8a9e6"
     - run: npm run build --if-present
       working-directory: devops_assignment
     - run: npm test -- --coverage
